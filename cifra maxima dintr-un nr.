@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int n, cmax=0, u;//cifra maxima se inițializează cu 0 sau cu -1
+cin>>n;
+while (n>0)
+{ u=n%10; //ultima cifra
+if (u>cmax)
+{cmax=u;}
+n = n /10;// tăierea ultimei cifre până când n ajunge 0
+}
+cout<<cmax; // afișarea cifrei maxime
+return 0;}
