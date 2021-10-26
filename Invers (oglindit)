@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n, inv; //declararea variabilelor
+cin>>n; // citirea lui n
+inv = 0; // inițializarea inversului cu 0 – deoarece este o sumă
+while(n) până când n ajunge < sau = cu 0
+{
+inv = inv * 10 + n%10; // se construiește inversul pornind de la ultima cifră
+n = n / 10; // golirea numarului n de cifre
+}
+cout<<inv;
+return 0;
+}
