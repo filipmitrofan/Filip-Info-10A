@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n; // declararea variabilei
+cin>>n; // citirea variabilei n
+while(n > 9)// cât timp n>9
+{
+n = n / 10;// tăierea ultimei cifre până când n ajunge de o cifră
+}
+cout<<n; //afisarea lui n (primei cifre a lui n)
+return 0;
+}
