@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int n, cmin=0, u;//cifra minima se inițializează cu 10 sau cu 9
+cin>>n;
+while (n>0)
+{ u=n%10; // ultima cifra
+if (u< cmin)
+{ cmin =u;}
+n = n /10; // tăierea ultimei cifre până când n ajunge 0
+}
+cout<< cmin; // afișarea cifrei minime
+return 0;}
