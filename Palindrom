@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+int p, c, r; // declararea variabilelor
+cin>>p; // citirea numărului p – presupus a fi de tip palindrom
+ c = p; // salvarea numărului p într-o altă variabilă c (copie)
+ r = 0; // initializarea lui r cu 0
+ while ( p > 0 ) {
+ r = r * 10 + p % 10; // se construiește răsturnatul
+ p = p / 10;// se goleşte numărul de cifre
+ }
+ if ( c == r ) // dacă răsturnatul este egal cu copia
+ cout<<"DA" ;
+ else
+ cout<<"NU" ;
+ return 0; }
