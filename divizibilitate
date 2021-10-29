@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n, d;
+ cin>>n ;
+cout<<"Divizorii lui ”<<n<<” sunt: ";
+ d = 1;
+ while ( d <= n/2 ) 2{
+ if ( n % d == 0 ) //dacă am găsit un divizor
+ cout<<d<<” “; // îl afişăm
+ d = d + 1;
+ }
+cout<<n;//la sfârșit îl afişăm şi pe n
+ return 0; }
