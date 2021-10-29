@@ -19,3 +19,16 @@ else
 cout<<n<<" nu este prim ";
 return 0;
 }
+
+pt fct
+int nr_prim(int x)
+{
+
+    if(x<2)
+        return 0;
+    for(int d=2; d*d<=x; d++)
+        if(x%d==0)
+    return 0;
+
+    return 1;
+}
